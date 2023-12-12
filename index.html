@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lights Out Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <table id="lightsOutBoard"></table>
+  <img id="winGif" src="win.gif" alt="Win Gif" class="hidden">
+  <button id="cheatButton">Cheat</button>
+  The cheat button was added for the convienience of the grader.                                                                                                                                                                                                                                                                                                                                                         
+</div>
+
+
+<!-- Addendum Section -->
+<div class="addendum" style="float: right; width: 700px; margin: 10px;">
+  <style>
+    .addendum {
+      text-align: justify;
+      margin: 10px;
+    }
+
+    .addendum ol, .addendum ul {
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <h2>Addendum</h2>
+  <p>Here are additional details about the design and development of the Lights Out game:</p>
+
+  <ol>
+    <li><strong>Designing the Game Logic:</strong><br>The game employs a straightforward approach where each cell's state is randomly set to either on or off. The toggleLights function is responsible for toggling the selected cell and its adjacent cells.</li>
+<h2>Addendum</h2> 
+
+    <li><strong>Creating the User Interface:</strong><br>The game interface is represented using an HTML table, where each cell symbolizes a light. CSS styling was applied to enhance visual presentation, including different colors for on and off lights. </li>
+
+    <li><strong>Adding Win Message:</strong><br>To notify players about their success, a simple "You win!" message is displayed using the window.alert function.</li>
+
+    <li><strong>Integrating Win GIF:</strong><br>Initially, GIF playback was attempted using the `audio` element, but later switched to the `img` element for improved compatibility and control. The GIF is made visible only when the user successfully wins the game.</li>
+
+    <li><strong>Implementing Cheat Button:</strong><br>A "Cheat" button has been added, providing users with the ability to instantly turn off all lights and achieve an instant win. This feature was incorporated for added fun and experimentation.</li>
+  </ol>
+
+  <h3>Challenges Faced and Overcoming Them:</h3>
+  <ul>
+    <li><strong>Rendering Issues:</strong><br>A challenge was encountered in ensuring the proper rendering of the game board after each user interaction. This was addressed by updating the `renderBoard` function to refresh the visual representation of the board.</li>
+
+    <li><strong>GIF Playback:</strong><br>Initially, attempts were made to play a GIF using the `audio` element. However, this method was later replaced with the `img` element for better compatibility and control over GIF display.</li>
+  </ul>
+
+  <h3>Conclusion:</h3>
+  <p>The Lights Out game's development involved striking a balance between simplicity and user engagement. The creative choices made, such as the use of an HTML table for the game board and the addition of interactive elements, contribute to an enjoyable user experience. The iterative process of testing and refining the game provided valuable insights into user preferences and highlighted challenges in the development process.</p>
+</div>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
